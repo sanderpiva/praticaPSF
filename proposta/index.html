@@ -216,10 +216,10 @@
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
-                                    <!--To activate this form, sign up at
+                                    To activate this form, sign up at
                                     <br />
                                     <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                    -->
+                                    
                                 </div>
                             </div>
                             <!-- Submit error message-->
@@ -228,7 +228,15 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>
+                            
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit" >Enviar</button>
+                            <!--
+                                btn acima nao funciona: nao carrega no bd: precisa de um btn simples
+                                mas ai fica sem estilização e abre uma pg php desnecessaria!!
+                                modelo que funciona:
+                                <button type="sumit">Enviar</button>
+                                outra possibilidade eh seguir a sugestao do startbootstrap
+                            -->    
                         </form>
                     </div>
                 </div>
@@ -257,19 +265,21 @@
                     </div>
                     <!-- Footer About Text-->
                     <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
+                        <img style = "width:80px; height:80px; padding-bottom:10px" src="assets/img/portfolio/logo7system.png" alt="">
+                        <h4 class="text-uppercase mb-4">Desenvolvido pela 7System Startup</h4>
+                        
+                        <!--<p class="lead mb-0">
                             Freelance is a free to use, MIT licensed Bootstrap theme created by
                             <a href="http://startbootstrap.com">Start Bootstrap</a>
                             .
-                        </p>
+                        </p>-->
                     </div>
                 </div>
             </div>
         </footer>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2022</small></div>
+            <div class="container"><small>Copyright &copy; PSF Poço Fundo MG 2022</small></div>
         </div>
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->

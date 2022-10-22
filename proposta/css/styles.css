@@ -11511,11 +11511,11 @@ html {
 
 #logo{
 
-  border-radius: 20%;
+  /* border-radius: 20%; */
   width:90px;
-  height: 90px;
+  height:90px;
   padding-right:5px;
-  padding-bottom:5px;
+  padding-bottom:10px;
   
 }
 
