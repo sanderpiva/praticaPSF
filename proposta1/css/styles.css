@@ -11535,7 +11535,8 @@ html {
   
   display: grid;
   grid-template-columns: 1fr 1fr;
-  
+  /* background-color: orange; */
+  gap:30px;
 }
 
 .ajusteTela img{
@@ -11543,11 +11544,28 @@ html {
   max-width:100%;
 }
 
+.x{
+
+  width:100px;
+  height:8vh;
+  border-radius:10px;
+  border: 2px solid #6c757d;
+  padding: 10px;
+  
+}
+
+.y{
+
+  text-align: justify;
+  text-decoration:none;
+  border: 2px solid #6c757d;
+}
 
 .ajusteTela p{
 
   text-align: justify;
   padding-left: 12px;
+  
 }
 
 @media screen and (max-width:521px){
