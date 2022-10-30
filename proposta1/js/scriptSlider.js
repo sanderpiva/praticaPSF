@@ -28,12 +28,48 @@ function inicia(){
 
     imgAtual=0;
     maxImg=imgs.length-1;
+    var btnE, btnD;
+
 
     slider = document.getElementById("slider");
+    btnE = document.getElementById("btnSliderE");
+    btnD = document.getElementById("btnSliderD");
+    
+   
+
     carregarImg(imgAtual);
     tempotroca=4000;
     tmp = setInterval(troca, tempotroca);
+    btnE.addEventListener("click",btnEtroca);
+    btnD.addEventListener("click", btnDtroca);
 }
+
+function btnEtroca(){
+
+    
+    imgAtual--;
+    if(imgAtual<0){
+
+       imgAtual=0;
+    }
+
+    carregarImg(imgAtual);
+
+
+}
+
+function btnDtroca(){
+
+    imgAtual++;
+    if(imgAtual>maxImg){
+
+       imgAtual=0;
+    }
+
+    carregarImg(imgAtual);
+
+}
+
 
 function troca(){
 
@@ -45,11 +81,7 @@ function troca(){
 
     carregarImg(imgAtual);
 }
-                    /*function mudaCor(){
-
-                        cx1.alert="x";
-
-                    } ao passar o mouse queria um alerta "vacinacao"*/
+                   
 
                     
 window.addEventListener("load", inicia);

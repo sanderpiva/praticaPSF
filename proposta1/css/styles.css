@@ -11527,9 +11527,21 @@ html {
   border: 2px solid purple;
   width:640px;
   max-width:100%;
-  margin:auto;
+  margin:auto; 
  
 }
+
+#btnSlider{
+
+  justify-content: space-evenly;
+}
+
+#btnSliderE, #btnSliderD{
+  display: inline;
+  cursor:pointer;
+  
+}
+
 /*cx1*/
 .ajusteTela{
   
