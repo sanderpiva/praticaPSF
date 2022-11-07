@@ -46,7 +46,7 @@
         <br><br><br><br><br><br><br>
         
         <div id = "slider">
-           
+               
             <div id="btnSliderE">
                 <img src="assets/img/portfolio/setaE.png" alt="">
                 
@@ -192,36 +192,47 @@
                         <!-- to get an API token!-->
                         <form method="POST" action="contato.php" id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="cpf" type="text" name="cpf" placeholder="Enter your name..." data-sb-validations="required" />
+                            <div class="form-floating mb-3"><!--data-sb-validations="required"-->
+                                <input class="form-control" id="cpf" type="text" name="cpf" placeholder="Enter your name..." required="cpf sem pontos" />
                                 <label for="name">CPF </label>
                                 <div class="invalid-feedback" data-sb-feedback="cpf:required">A cpf is required.</div>
                             </div>
                     
                             <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" name="nome" placeholder="Enter your name..." data-sb-validations="required" />
+                            <div class="form-floating mb-3"><!--data-sb-validations="required"-->
+                                <input class="form-control" id="name" type="text" name="nome" placeholder="Enter your name..." required />
                                 <label for="name">Nome completo</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <div class="form-floating mb-3"><!--data-sb-validations="required,email"-->
+                                <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" required />
                                 <label for="email">Email</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" name="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <div class="form-floating mb-3"><!-- data-sb-validations="required"-->
+                                <input class="form-control" id="phone" type="tel" name="tel" placeholder="(123) 456-7890" required />
                                 <label for="phone">Telefone</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
+                                <!--
                                 <input class="form-control" id="message" type="text" name="assunto" placeholder="Enter your message here..." style="height: 6rem" data-sb-validations="required">
-                                
-                                <label for="message">Assunto</label>
+                                -->
+                                <label for="message">Assunto</label><br><br><br>
+                                <select id="message" class="seletor" name="assunto" style = "color:grey" required>
+
+                                    <option value="" selected>Selecione</option>
+                                    <option value="VACINACAO">VACINACAO</option>
+                                    <option value="ATENDIMENTO">ATENDIMENTO MEDICO</option>
+                                    <option value="AGENDAMENTO">AGENDAMENTO</option>
+                                    <option value="DICAS DE SAUDE">DICAS DE SAÚDE</option>
+                                    
+                                  </select>
+                                <!--<label for="message">Assunto</label>-->
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
                             <!-- Submit success message-->
@@ -243,15 +254,22 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
+                            <!--
                             
                             <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit" >Enviar</button>
+                            -->
+                            
                             <!--
                                 btn acima nao funciona: nao carrega no bd: precisa de um btn simples
                                 mas ai fica sem estilização e abre uma pg php desnecessaria!!
                                 modelo que funciona:
                                 <button type="sumit">Enviar</button>
                                 outra possibilidade eh seguir a sugestao do startbootstrap
-                            -->    
+                            -->  
+                            <!---->  
+                            <br><br><br><br><br><br><br>
+                            <button class="btn btn-primary btn-xl" type="submit">Enviar</button>
+                            
                         </form>
                     </div>
                 </div>
