@@ -46,7 +46,7 @@
         <br><br><br><br><br><br><br>
         
         <div id = "slider">
-               
+           
             <div id="btnSliderE">
                 <img src="assets/img/portfolio/setaE.png" alt="">
                 
@@ -79,7 +79,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/vacina.jpg" alt="..." />
+                            <img id="alerta" class="img-fluid" src="assets/img/portfolio/vacina.jpg" alt="..." />
     
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img style="height:215px" class="img-fluid" src="assets/img/portfolio/atendimento.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/atendimento.jpg" alt="..." />
                             
                         </div>
                     </div>
@@ -108,18 +108,18 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <p style = "font-family: var(--bs-body-font-family); font-weight:bold; text-align:center; color: #2c3e50">AGENDA ENFERMAGEM</p>
+                    <!--<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <p style = "font-family: var(--bs-body-font-family); font-weight:bold; text-align:center; color: #2c3e50">FARMÁCIA</p>
                         
                         
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img style="width: 400px; height:215px" class="img-fluid" src="assets/img/portfolio/enf.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/medicamentos.jpg" alt="..." />
                         </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
+                    </div>-->
+                    <!-- Portfolio Item 4-->
                     <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
                         <p style = "font-family: var(--bs-body-font-family); font-weight:bold; text-align:center; color: #2c3e50">DICAS DE SAÚDE</p>
                         
@@ -131,17 +131,17 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <p style = "font-family: var(--bs-body-font-family); font-weight:bold; text-align:center; color: #2c3e50">AGENDA TEC. ENFERMAGEM</p>
+                    <!--<div class="col-md-6 col-lg-4">
+                        <p style = "font-family: var(--bs-body-font-family); font-weight:bold; text-align:center; color: #2c3e50">AMBULÂNCIA</p>
                         
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img style="width: 400px; height:215px" class="img-fluid" src="assets/img/portfolio/tec.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/ambulancia.jpg" alt="..." />
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </section>
         <!-- About Section--><!--section: class="page-section bg-primary text-white mb-0"-->
@@ -192,47 +192,36 @@
                         <!-- to get an API token!-->
                         <form method="POST" action="contato.php" id="contactForm" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
-                            <div class="form-floating mb-3"><!--data-sb-validations="required"-->
-                                <input class="form-control" id="cpf" type="text" name="cpf" placeholder="Enter your name..." required="cpf sem pontos" />
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="cpf" type="text" name="cpf" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">CPF </label>
                                 <div class="invalid-feedback" data-sb-feedback="cpf:required">A cpf is required.</div>
                             </div>
                     
                             <!-- Name input-->
-                            <div class="form-floating mb-3"><!--data-sb-validations="required"-->
-                                <input class="form-control" id="name" type="text" name="nome" placeholder="Enter your name..." required />
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" name="nome" placeholder="Enter your name..." data-sb-validations="required" />
                                 <label for="name">Nome completo</label>
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <!-- Email address input-->
-                            <div class="form-floating mb-3"><!--data-sb-validations="required,email"-->
-                                <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" required />
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" name="email" placeholder="name@example.com" data-sb-validations="required,email" />
                                 <label for="email">Email</label>
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                             </div>
                             <!-- Phone number input-->
-                            <div class="form-floating mb-3"><!-- data-sb-validations="required"-->
-                                <input class="form-control" id="phone" type="tel" name="tel" placeholder="(123) 456-7890" required />
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" name="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
                                 <label for="phone">Telefone</label>
                                 <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <!--
                                 <input class="form-control" id="message" type="text" name="assunto" placeholder="Enter your message here..." style="height: 6rem" data-sb-validations="required">
-                                -->
-                                <label for="message">Assunto</label><br><br><br>
-                                <select id="message" class="seletor" name="assunto" style = "color:grey" required>
-
-                                    <option value="" selected>Selecione</option>
-                                    <option value="VACINACAO">VACINACAO</option>
-                                    <option value="ATENDIMENTO">ATENDIMENTO MEDICO</option>
-                                    <option value="AGENDAMENTO">AGENDAMENTO</option>
-                                    <option value="DICAS DE SAUDE">DICAS DE SAÚDE</option>
-                                    
-                                  </select>
-                                <!--<label for="message">Assunto</label>-->
+                                
+                                <label for="message">Assunto</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
                             <!-- Submit success message-->
@@ -254,22 +243,15 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <!--
                             
                             <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit" >Enviar</button>
-                            -->
-                            
                             <!--
                                 btn acima nao funciona: nao carrega no bd: precisa de um btn simples
                                 mas ai fica sem estilização e abre uma pg php desnecessaria!!
                                 modelo que funciona:
                                 <button type="sumit">Enviar</button>
                                 outra possibilidade eh seguir a sugestao do startbootstrap
-                            -->  
-                            <!---->  
-                            <br><br><br><br><br><br><br>
-                            <button class="btn btn-primary btn-xl" type="submit">Enviar</button>
-                            
+                            -->    
                         </form>
                     </div>
                 </div>
@@ -488,7 +470,7 @@
             </div>
         </div>
         <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+        <!--<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
@@ -496,33 +478,19 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
+                                -->
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">AGENDA ENFERMAGEM</h2>
-                                    <!-- Icon Divider-->
+                                   <!-- <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+                                    Icon Divider
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img style="width:200px; height:150px" class="img-fluid rounded mb-5" src="assets/img/portfolio/enf.jpg" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <ul style="text-align:left; list-style:none">
-                                        <li>Segunda- Cedo/Tarde </li>
-                                        <li>Terça- Cedo/Tarde </li>
-                                        <li>Quarta- Cedo/Tarde </li>
-                                        <li>Quinta- Cedo/Tarde </li>
-                                        <li>Sexta- Cedo/Tarde </li>
-                                    </ul>
-                                    <ul style="text-align:left; list-style:none">
-                                        <li>OBS 1: Parte de cedo por ordem de chegada, chegar as 07:00.
-                                        </li>
-                                        <li>OBS 2: Sao 15 fichas disponibilizadas cedo. 
-                                        </li>
-                                        <li>OBS 2: Parte da tarde apenas agendamento ligue no PSF ou fale com seu agente. 
-                                        </li>
-                                       
-                                    </ul>
+                                    Portfolio Modal - Image
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    Portfolio Modal - Text
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -533,9 +501,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Portfolio Modal 5-->
+        </div>-->
+        <!-- Portfolio Modal 4-->
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -553,7 +520,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img style="width:200px; height:150px"class="img-fluid rounded mb-5" src="assets/img/portfolio/dicasSaude.jpg" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
@@ -567,7 +534,7 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 6-->
+        <!-- Portfolio Modal 6
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
@@ -576,33 +543,22 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">AGENDA TEC. ENFERMAGEM</h2>
-                                    <!-- Icon Divider-->
+                                    Portfolio Modal - Title
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Ambulância</h2>
+                                    Icon Divider
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
                                         <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                         <div class="divider-custom-line"></div>
                                     </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img style="width:200px; height:150px" class="img-fluid rounded mb-5" src="assets/img/portfolio/tec.jpg" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <ul style="text-align:left; list-style:none">
-                                        <li>Segunda- Cedo/Tarde </li>
-                                        <li>Terça- Cedo/Tarde </li>
-                                        <li>Quarta- Cedo/Tarde </li>
-                                        <li>Quinta- Cedo/Tarde </li>
-                                        <li>Sexta- Cedo/Tarde </li>
-                                    </ul>
-                                    <ul style="text-align:left; list-style:none">
-                                        <li>OBS 1: Parte de cedo por ordem de chegada, chegar as 07:00.
-                                        </li>
-                                        <li>OBS 2: Sao 15 fichas disponibilizadas cedo. 
-                                        </li>
-                                        <li>OBS 2: Parte da tarde apenas agendamento ligue no PSF ou fale com seu agente. 
-                                        </li>
-                                       
-                                    </ul>
+                                    
+                                    <div id="cx">style="height:400px; width:100vw;"
+                                                
+                                    </div>-->
+                                    <!-- Portfolio Modal - Image
+                                    <img style = "width:200px" class="img-fluid rounded mb-5" src="assets/img/portfolio/ambulancia.jpg" alt="..." />
+                                    Portfolio Modal - Text
+                                    <p style = "text-align:justify" class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -613,8 +569,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+        </div>-->
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
