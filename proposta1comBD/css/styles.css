@@ -11542,21 +11542,12 @@ html {
   
 }
 
-/*cx1*/
-.ajusteTela{
-  
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* background-color: orange; */
-  gap:30px;
+.col-lg-8 p{
+
+  text-align: justify;
 }
 
-.ajusteTela img{
-
-  max-width:100%;
-}
-
-.x{
+.col-lg-6 p{
 
   width:100px;
   height:60px;
@@ -11566,12 +11557,26 @@ html {
   
 }
 
-.y{
+.col-lg-6 ul{
 
   text-align: justify;
   text-decoration:none;
-  border: 2px solid #6c757d;
+
 }
+
+/*
+.ajusteTela{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:30px;
+}
+
+.ajusteTela img{
+
+  max-width:100%;
+}
+
 
 .ajusteTela p{
 
@@ -11594,4 +11599,4 @@ html {
     max-width: 100%;
   }
 
-}
+}*/
