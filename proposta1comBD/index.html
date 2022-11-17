@@ -35,16 +35,16 @@
                     </ul>
                 </div>
             </div>
-        </nav><!--style = "background-color: lightgrey"-->
+        </nav>
         <!-- Masthead-->
         
         <!--
         <header class="masthead">
             
         </header>-->
-        
-        <br><br><br><br><br><br><br>
-        
+        <!--
+        <br><br><br><br><br><br><br>-->
+        <!--
         <div id = "slider">
                
             <div id="btnSliderE">
@@ -56,8 +56,78 @@
                 
             </div>    
         </div>
-        
+        -->
+        <!--Inicio carrossel-->
+        <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        >
+            <div class="carousel-indicators">
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+            ></button>
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+            ></button>
+            <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+            ></button>
+            </div>
 
+            <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="assets/imagesSlider/s5.jpg" class="d-block w-100" alt="1" />
+                <div class="carousel-caption d-none d-md-block">
+                <h5>1</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/imagesSlider/s6.jpg" class="d-block w-100" alt="2" />
+                <div class="carousel-caption d-none d-md-block">
+                <h5>2</h5>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/imagesSlider/s7.jpg" class="d-block w-100" alt="3" />
+                <div class="carousel-caption d-none d-md-block">
+                <h5>3</h5>
+                </div>
+            </div>
+            </div>
+            <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+            >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+            >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+
+            <!--Fim carrossel-->
+        </div>
+        <!--FIM-->
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -250,7 +320,7 @@
                                 </div>-->
                                 <div id="contactForm">
                                     <p>INSERÇÃO NÃO DISPONÍVEL NO MOMENTO, RECARREGUE PÁGINA</p>
-                                            
+                                    
                                 </div>
                             </div><br>
                             <!-- Submit error message-->
@@ -259,7 +329,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <!---->
+                            
                             
                             <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit" >Enviar</button>
                             
@@ -276,9 +346,10 @@
                                 
                                 outra possibilidade eh seguir a sugestao do startbootstrap
                             -->  
-                            <!--  
-                            <br><br><br><br><br>
-                            <button class="btn btn-primary btn-xl" type="submit">Enviar</button>
+                              
+                            <br><br>
+                            <!--
+                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Enviar</button>
                             -->
                         </form>
                     </div>
@@ -698,6 +769,7 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script type="text/javascript" src=js/scriptSlider.js></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        
     </body>
 </html>

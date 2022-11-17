@@ -11512,13 +11512,13 @@ html {
 #logo{
 
   /* border-radius: 20%; */
-  width:90px;
-  height:90px;
+  width:80px;
+  height:80px;
   padding-right:5px;
   padding-bottom:10px;
   
 }
-
+/*
 #slider{
 
   background-size: cover; 
@@ -11540,7 +11540,7 @@ html {
   display: inline;
   cursor:pointer;
   
-}
+}*/
 
 .col-lg-8 p{
 
