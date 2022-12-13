@@ -1,5 +1,6 @@
 #Protótipo
 #PSF: Posto da Saúde da Família - Poço Fundo MG
+#Estrutura: Implementação em HTML5, CSS3 e interatividade em JavaScript 
 
 #Alguns prints da página
 
