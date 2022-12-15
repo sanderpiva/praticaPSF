@@ -1,8 +1,6 @@
-<h1>Protótipo</h1>
-<h2>PSF: Posto da Saúde da Família - Poço Fundo MG</h2>
-<h3>Estrutura da Página web: Implementação em HTML5, CSS3 e interatividade em JavaScript</h3>
-
-<p>Alguns prints da página</p>
+<h1>Protótipo PSF: Posto da Saúde da Família - Poço Fundo MG</h1>
+<h2>Estrutura da Página web: Implementação em HTML5, CSS3 e interatividade em JavaScript</h2>
+<h3>Alguns prints da página</h3>
 
 ![image](https://user-images.githubusercontent.com/84524010/207167419-633088e5-39e1-488e-b38a-4862f08e066b.png)
 
